@@ -8,7 +8,7 @@ const cors = require('cors');
 
 app.use(bodyParser.json());
 
-app.use(cors());
+app.use(cors('http://localhost:5500'));
 app.use('/posts', postsRoutes);
 
 app.listen(5500, () => console.log('Server started: 5500'))
